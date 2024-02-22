@@ -12,7 +12,7 @@ const Navbar = () => {
                 <p className='font-bold my-auto  text-xl'>SHOPPER</p>
             </div>
             <div className="nav-menu  w-[30%]">
-                <ul className='flex justify-evenly items-center cursor-pointer'>
+                <ul className='flex justify-evenly items-center cursor-pointer font-semibold'>
                     <li onClick={() => { setMenu("shop") }}><Link to='/'>Shop</Link> {menu === "shop" ? <hr className='border-none font-black  h-1 rounded-lg bg-red-600' /> : <></>}</li>
                     <li onClick={() => { setMenu("mens") }}> <Link to='/mens'>Men</Link>{menu === "mens" ? <hr className='border-none font-black  h-1 rounded-lg bg-red-600' /> : <></>}</li>
                     <li onClick={() => { setMenu("womens") }}> <Link to='/womens'>Women</Link>{menu === "womens" ? <hr className='border-none font-black  h-1 rounded-lg bg-red-600' /> : <></>}</li>
